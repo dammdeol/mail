@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AR Report – {{report_date_en}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            color: #2d3e50;
+        }
+
+        .footer {
+            font-size: 10px;
+            color: gray;
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Please see below the <b>AR Summary</b> as of <b>{{report_date_en}}</b>. See the note related to the US 3rd Party
+        by location chart.</p>
+
+    <div>
+        <h2>Overall %</h2>
+        <br><img src="cid:img1" alt="overall" style="width:378px; height:189px;"><br>
+    </div>
+
+    <div>
+        <h2>31+ past due trending</h2>
+        <br><img src="cid:img2" alt="31+ past due trending" style="width:670px; height:400px;"><br>
+    </div>
+
+    <div>
+        <h2>US 3rd Party by location</h2>
+        <p>This is a note to help interpret this chart: the chart is sorted on the column titled “% to Total” in the
+            heading “Summary of 31+ Past Due”.<br>
+            This column shows the dollar value of the “31+ days” invoice amounts as a percentage of the Total dollar
+            amount sold.<br>
+            This does not consider the terms that might apply to various customers. It’s based on the invoice date, and
+            just 31 or more days after this date.<br>
+            If one location has a high number of accounts, or large dollar sales, that are given extended terms (more
+            than 30 days), the dollar value of “31+ days” may
+            represent a high percentage of the Total value sold.<br>
+            Very often the Major category is near the top for these reasons – National accounts likely with extended
+            terms.<br>
+            Large pre-paid amounts can work in an opposite way.</p>
+    <div>
+        <img src="cid:img3" style="width:1016px; height:825px;" alt="Accounts Receivable Summary Table">
+        <div style="margin-top: 10px;">
+            <div style="font-size: 14px; font-weight: bold; margin-bottom: 4px;">Legend – % 31+ Past Due</div>
+            <img src="cid:img4" style="width: 220px; height: 120px;
+                background: white; border: 1px solid #ccc; border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.2); padding: 4px;" alt="Legend for % Past Due Color Coding">
+    </div>
+</div>
+
+    </div>
+
+    <div class="footer">
+        <i>Creation Date: {{created_at}}.</i>
+        <i>This report is automatically generated. For any updates or changes, please contact the appropriate team:
+        • Report or Recipients List – User (<a href="mailto:sample@mail.com.mx">sample@mail.com.mx</a>).
+        • SharePoint Site access – User (<a href="mailto:sample@mail.com">sample@mail.com</a>).</i>
+    </div>
+</body>
+
+</html>
