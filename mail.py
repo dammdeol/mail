@@ -3,6 +3,8 @@ import datetime
 import os
 import pandas as pd
 
+# Definir funciones
+
 def leer_destinatarios(path_excel):
     if not os.path.exists(path_excel):
         raise FileNotFoundError(f"Excel file not found: {path_excel}")
